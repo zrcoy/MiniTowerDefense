@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{04735107-3ecb-4bb0-986f-ab19fcf6073a}</ItemsProjectGuid>
+    <ItemsProjectName>Game-Shared</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\Ball.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\Boss\Boss.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\Cursor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\GameObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\HealthBar.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\Player.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\PlayerController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\Tower.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GamePCH.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\Game.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\Mesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Particle System\Particle Emitter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Particle System\Particle Renderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Pathfinder\Pathfinder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Score\Score.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\SpriteSheet\SpriteSheet.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Tilemap\Tilemap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\Ball.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\Boss\Boss.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\Cursor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\GameObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\HealthBar.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\Player.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\PlayerController.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\Tower.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GamePCH.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\Game.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\Mesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Particle System\Particle Emitter.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Particle System\Particle Renderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Pathfinder\Pathfinder.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Score\Score.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\SpriteSheet\SpriteSheet.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Tilemap\Tilemap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Color.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Color.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Moving.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Moving.vert" />
+    <None Include="Z:\Graphic Programming\week13\repo3_copy\Game\Data\TowerDefense.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)..\readme.txt" />
+  </ItemGroup>
+</Project>
